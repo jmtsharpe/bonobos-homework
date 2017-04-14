@@ -8,9 +8,11 @@
 
 require 'csv'
 
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'products.csv'))
-csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-csv.each do |row|
+
+# parses 
+products_text = File.read(Rails.root.join('lib', 'seeds', 'products.csv'))
+product_csv = CSV.parse(products_text, :headers => true, :encoding => 'ISO-8859-1')
+product_csv.each do |row|
 	t = Product.new
 	t.product_name = row['product_name']
 	t.product_image = row['product_image']
@@ -20,9 +22,9 @@ csv.each do |row|
 	puts "#{t.product_name} saved"
 end
 
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'inventory.csv'))
-csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-csv.each do |row|
+inventory_text = File.read(Rails.root.join('lib', 'seeds', 'inventory.csv'))
+inventory_csv = CSV.parse(inventory_text, :headers => true, :encoding => 'ISO-8859-1')
+inventory_csv.each do |row|
 	t = InventoryItem.new
 	t.product_id = row['product_id']
 	t.waist = row['waist']
