@@ -14,7 +14,7 @@ Server should set up to localhost:3000
 
 == My Approach
 
-* First issue was creating the database and loading the seed data. 
+First issue was creating the database and loading the seed data. 
 * I decided to load the data directly from the csv file usinge a ruby csv reader library. 
 * I matched the csv files collumns to the collumns in the database. 
 * For the data base I used rails default sqlite database. It is light weight and serves the purpose of this exercise.
