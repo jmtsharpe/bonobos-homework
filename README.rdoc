@@ -12,3 +12,26 @@ Web application built on Ruby on Rails with a restful JSON api.
 
 Server should set up to localhost:3000
 
+== My Approach
+
+* First issue was creating the database and loading the seed data. 
+* I decided to load the data directly from the csv file usinge a ruby csv reader library. 
+* I matched the csv files collumns to the collumns in the database. 
+* For the data base I used rails default sqlite database. It is light weight and serves the purpose of this exercise.
+
+Second issue was creating my api to access the data. 
+* I decided to go with a RESTful JSON api. 
+* I seperated my api controllers from the other controllers for make it easier to understand what is happening.
+* I used jbuilder to build my json response.
+
+Third issue is creating my front end and loading the data. 
+* I decided on a simple ajax call and then using jquery to create my product list. 
+* I use JQuery to create my entire product and inventory list before appending it to my root element. 
+* I decided to attach everything to a root element to make it easier to attach a framework like React or Angular2 if this were to be made into a more complicated application.
+
+== Future Improvements
+
+* I built this in a way that would make switching to a framework easy.
+* If I wanted to add more features and more pages I would use something like react.
+* I would also seperate my ajax requests so that my page isn't relying a single request for the whole app. This would make sure at least some of the site will load and also reduce initial load times.
+* If I wanted to make this more scalable on the backend I could use a database like postgres in the non-development environment.
