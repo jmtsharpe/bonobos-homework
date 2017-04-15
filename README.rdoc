@@ -15,23 +15,22 @@ Server should set up to localhost:3000
 == My Approach
 
 First task was creating the database and loading the seed data. 
-* I decided to load the data directly from the csv file usinge a ruby csv reader library. 
+* I decided to load the data directly from the csv file usinge a Ruby csv reader library. 
 * I matched the csv files collumns to the collumns in the database. 
-* For the data base I used rails default sqlite database. It is light weight and serves the purpose of this exercise.
+* For the data base I used the rails default SQLite database. It is a light weight SQL database.
 
 Second task was creating my api to access the data. 
 * I decided to go with a RESTful JSON api. 
-* I seperated my api controllers from the other controllers for make it easier to understand what is happening.
-* I used jbuilder to build my json response.
+* I seperated my api controllers from the other controllers for readability.
+* I used jbuilder to build my JSON response.
 
 Third task was creating my front end and loading the data. 
-* I decided on a simple ajax call and then using jquery to create my product list. 
-* I use JQuery to create my entire product and inventory list before appending it to my root element. 
+* I decided on a simple Ajax call and then using JQuery to create my product list. 
+* I used JQuery to create my entire product and inventory list before appending it to my root element. 
 * I decided to attach everything to a root element to make it easier to attach a framework like React or Angular2 if this were to be made into a more complicated application.
 
 == Future Improvements
-
-* I built this in a way that would make switching to a framework easy.
-* If I wanted to add more features and more pages I would use something like react.
-* I would also seperate my ajax requests so that my page isn't relying a single request for the whole app. This would make sure at least some of the site will load and also reduce initial load times.
-* If I wanted to make this more scalable on the backend I could use a database like postgres in the non-development environment.
+* Turning the list of inventory into a compressed list that is filtered. Use dropdown selector to filter the list. Add options for ordering the list.
+* If the app was to become larger I would seperate my Ajax requests so that my page isn't relying a single request for the whole app. This would make sure at least some of the site will load and also reduce initial load times.
+* I built this in a way that would simplify switching to a front-end framework. If I wanted to add more features and more pages I would use a framework like React. React helps making a large scale web application modular and scalable. It also makes dom manipulation very fast.
+* If I wanted to make this more scalable on the back-end I could use a database like Postgres in the non-development environment.
