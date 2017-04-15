@@ -35,6 +35,7 @@ button, article, footer, small {
 
 body {
 	font-family: sans-serif;
+	background: #f4f4f4;
 }
 
 h1 {
@@ -54,6 +55,9 @@ h1 {
 	display: inline-block;
 	background: white;
 	font-size: 1.5em;
+	overflow-x: hidden;
+	text-overflow: hidden;
+	white-space: nowrap;
 }
 
 .col1 {
@@ -70,15 +74,16 @@ h1 {
 	width: 100%;
 	padding: 10px 20px;
 	margin-bottom: 30px;
+	color: #232323;
+	background: white;
 }
 
 .product-title {
-	border: 1px solid #dddddd;
-	border-bottom: none;
 }
 
 .inventory-headers {
 	font-weight: bold;
+	box-shadow: 1px 1px 1px #232323;
 }
 
 .inventory-headers > div {
@@ -100,7 +105,7 @@ h1 {
 .display-img {
 	width: 100%;
 	border: 1px solid #dddddd;
-	border-top: none;
+	max-width: 550px;
 	
 }
 
@@ -111,4 +116,10 @@ h1 {
 
 .inventory-item {
 	border-bottom: 1px solid #DDDDDD;
+}
+
+.loading {
+	font-size: 4em;
+	width: 100%;
+	text-align: center;
 }
