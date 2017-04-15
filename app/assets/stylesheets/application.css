@@ -13,3 +13,72 @@
  *= require_tree .
  *= require_self
  */
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, h4, h3, p,
+form, fieldset, label, textarea,
+button, article, footer, small {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: inherit;
+	font-family: inherit;
+	box-sizing: content-box;;
+	color: inherit;
+	text-align: inherit;
+	text-decoration: none;
+	background: transparent;
+	box-shadow: none;
+	list-style: none;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.group:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.collumn {
+	width: 150px;
+	padding: 10px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.product-section {
+	height: auto;
+	display: inline-block;
+	width: 80%;
+	padding: 20px;
+}
+
+.inventory-headers {
+	font-weight: bold;
+}
+
+.inventory-headers > div {
+	background: lightblue;
+	border: 1px solid black;
+}
+
+.inventory {
+	float: right;
+	width: 65%;
+	text-align: right;
+}
+
+.showoff {
+	float: left;
+	width: 30%;
+}
+
+.display-img {
+	width: 300px;
+	height: 400px;
+}
