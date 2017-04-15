@@ -1,28 +1,14 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web application built on Ruby on Rails with a restful JSON api.
 
-Things you may want to cover:
+== Run Instuctions
 
-* Ruby version
+* Clone repo
+* cd into rep
+* run $ bundle install
+* run $ rake db:setup
+* run $ rails server
 
-* System dependencies
+Server should set up to localhost:3000
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
