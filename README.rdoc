@@ -1,6 +1,6 @@
 == README
 
-Web application built on Ruby on Rails with a restful JSON api.
+Web application built on Ruby on Rails with a restful JSON api. Jquery on the front end.
 
 == Run Instuctions
 
