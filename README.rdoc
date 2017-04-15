@@ -30,7 +30,9 @@ Third task was creating my front end and loading the data.
 * I decided to attach everything to a root element to make it easier to attach a framework like React or Angular2 if this were to be made into a more complicated application.
 
 == Future Improvements
-* Turning the list of inventory into a compressed list that is filtered. Use dropdown selector to filter the list. Add options for ordering the list.
+
+* Add a better loading screen.
+* Turn the list of inventory into a compressed list that is filtered. Use dropdown selector to filter the list. Add options for ordering the list.
 * If the app was to become larger I would seperate my Ajax requests so that my page isn't relying a single request for the whole app. This would make sure at least some of the site will load and also reduce initial load times.
 * I built this in a way that would simplify switching to a front-end framework. If I wanted to add more features and more pages I would use a framework like React. React helps making a large scale web application modular and scalable. It also makes dom manipulation very fast.
 * If I wanted to make this more scalable on the back-end I could use a database like Postgres in the non-development environment.
