@@ -44,6 +44,8 @@ h1 {
 	text-transform: capitalize;
 }
 
+/*** CLEARFIX ***/
+
 .group:after {
 	content: "";
 	clear: both;
@@ -133,8 +135,6 @@ h1 {
 .col2, .col3, .col4 {
 	width: 15%;
 }
-
-
 
 /* LOADING */
 
