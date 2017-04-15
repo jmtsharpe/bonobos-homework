@@ -7,9 +7,9 @@ function loadProducts(){
 		data.map(function(product){
 			var prodDisplay = $("<li class='product-section'>");
 			var prodShowOff = $("<div class='showoff group'>");
-			prodShowOff.append("<h1>"  + product.product_name + "</h1>");
+			prodShowOff.append("<h1 class='product-title'>"  + product.product_name + "</h1>");
 			prodShowOff.append("<img src='" + product.product_image + "' class='display-img'>");
-			prodShowOff.append("<p>" + product.product_description + "</p>");
+			prodShowOff.append("<article class='prod-descript'>" + product.product_description + "</article>");
 			prodDisplay.append(prodShowOff);
 
 			var inventory = createInventoryList(product);
@@ -29,7 +29,7 @@ function loadProducts(){
 		var items = "";
 		items += "<li class='inventory-headers'><div class=' collumn col1'>Style</div><div class='collumn col2'>Waist</div><div class='collumn col3'>Length</div><div class='collumn col4'>Count</div></li>";
 		product.inventory_items.map(function(item){
-			items += "<li><div class=' collumn col1'>" + item.style + "</div><div class='collumn col2'>" + item.waist + "</div><div class='collumn col3'>" + item.length + "</div><div class=' collumn col4'>" + item.count + "</div></li>";
+			items += "<li class='inventory-item'><div class=' collumn col1'>" + item.style + "</div><div class='collumn col2'>" + item.waist + "</div><div class='collumn col3'>" + item.length + "</div><div class=' collumn col4'>" + item.count + "</div></li>";
 		})
 
 		itemList.append(items);

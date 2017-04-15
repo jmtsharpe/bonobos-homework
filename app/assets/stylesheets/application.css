@@ -24,7 +24,7 @@ button, article, footer, small {
 	outline: 0;
 	font-size: inherit;
 	font-family: inherit;
-	box-sizing: content-box;;
+	box-sizing: border-box;;
 	color: inherit;
 	text-align: inherit;
 	text-decoration: none;
@@ -33,9 +33,14 @@ button, article, footer, small {
 	list-style: none;
 }
 
+body {
+	font-family: sans-serif;
+}
+
 h1 {
 	font-weight: bold;
 	font-size: 3em;
+	text-transform: capitalize;
 }
 
 .group:after {
@@ -45,17 +50,31 @@ h1 {
 }
 
 .collumn {
-	width: 150px;
-	padding: 10px;
+	padding: 5px;
 	display: inline-block;
-	border: 1px solid black;
+	background: white;
+	font-size: 1.5em;
+}
+
+.col1 {
+	width: 55%;
+}
+
+.col2, .col3, .col4 {
+	width: 15%;
 }
 
 .product-section {
 	height: auto;
 	display: inline-block;
-	width: 80%;
-	padding: 20px;
+	width: 100%;
+	padding: 10px 20px;
+	margin-bottom: 30px;
+}
+
+.product-title {
+	border: 1px solid #dddddd;
+	border-bottom: none;
 }
 
 .inventory-headers {
@@ -64,21 +83,32 @@ h1 {
 
 .inventory-headers > div {
 	background: lightblue;
-	border: 1px solid black;
 }
 
 .inventory {
 	float: right;
-	width: 65%;
+	width: 50%;
 	text-align: right;
 }
 
 .showoff {
 	float: left;
-	width: 30%;
+	width: 50%;
+	text-align: center;
 }
 
 .display-img {
-	width: 300px;
-	height: 400px;
+	width: 100%;
+	border: 1px solid #dddddd;
+	border-top: none;
+	
+}
+
+.prod-descript {
+	font-size: 1.5em;
+	padding: 20px 40px;
+}
+
+.inventory-item {
+	border-bottom: 1px solid #DDDDDD;
 }
