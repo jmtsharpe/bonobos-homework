@@ -5,10 +5,10 @@ Web application built on Ruby on Rails with a restful JSON api.
 == Run Instuctions
 
 * Clone repo
-* cd into rep
-* run $ bundle install
-* run $ rake db:setup
-* run $ rails server
+* cd into repo
+* Run $ bundle install
+* Run $ rake db:setup
+* Run $ rails server
 
 Server should set up to localhost:3000
 
