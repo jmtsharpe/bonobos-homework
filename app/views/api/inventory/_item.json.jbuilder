@@ -1,0 +1,1 @@
+json.extract!( item, :waist, :length, :style, :count )
